@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperShare</title>
+    <script type="text/javascript">
+     var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[]};
+ // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+ clevertap.account.push({"id": "6ZW-89K-976Z"});
+ (function () {
+         var wzrk = document.createElement('script');
+         wzrk.type = 'text/javascript';
+         wzrk.async = true;
+         wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(wzrk, s);
+  })();
+</script>
+<script src="./index.js" defer></script>
+</head>
+<body>
+<div> 
+        <h4>I want to unsubscribe from future emails</h4>
+        <input type="text" id="email" readonly="readonly" />
+        <br/><br/>
+        <button onclick="unsubscribe()">Unsubscribe me</button><br/><br/>
+        <button onclick="resubscribe()">Resubscribe me</button><br/><br/>
+        <!-- button onclick="resubscribe()">Resubscribe</button -->
+    </div>
+</body>
+</html>
